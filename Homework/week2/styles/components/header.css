@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    /* draw-icon과 aside는 양쪽 사이드에 붙이고 nav를 중앙정렬 함 */
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.width-container {
+    display: flex;
+    width: 88%;
+    max-width: 1060px;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-down {
+    display: flex;
+    align-items: center;
+}
+.draw-icon {
+    display: flex;
+    margin-right: 15px;
+}
+nav {
+    display: flex;
+}
+
+nav > div {
+    padding: 5px;
+    margin: 0px 10px;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+}
+
+aside {
+    display: flex;
+}
+
+aside > div {
+    padding: 5px;
+    margin: 5px;
+}
+.service-button {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    border-radius: 15px;
+    padding: 0 10px;
+    border: 1px solid rgb(225, 226, 227);
+    color: rgb(102, 102, 102);
+}
+#sign-box {
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+}
+.mouse-hover {
+    cursor: pointer;
+}

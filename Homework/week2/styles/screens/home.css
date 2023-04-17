@@ -1,0 +1,448 @@
+#content {
+  display: flex;
+  flex-direction: column;
+}
+#spinner-wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+#spinner {
+  border: 16px solid #f3f3f3; /* Spinner의 경계선 스타일 */
+  border-top: 16px solid #3498db; /* Spinner의 최상단 경계선 색상 */
+  border-radius: 50%; /* Spinner를 원형으로 만들기 위한 속성 */
+  width: 120px; /* Spinner의 너비 */
+  height: 120px; /* Spinner의 높이 */
+  animation: spin 2s linear infinite; /* Spinner의 애니메이션 효과 */
+}
+
+@keyframes spin {
+  /* Spinner 애니메이션 효과를 위한 keyframes */
+  0% {
+    transform: rotate(0deg);
+  } /* 0도 회전 */
+  100% {
+    transform: rotate(360deg);
+  } /* 360도 회전 */
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.warning-box {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 640px;
+  height: 44px;
+  padding: 25px 30px;
+  background-color: rgb(243, 245, 248);
+  border-radius: 5px;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.warning-svg-box {
+  margin-right: 20px;
+}
+.arrow-svg-box {
+  margin-left: auto;
+  /* position: absolute;
+  right: 0px; */
+}
+.position-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 20px;
+  font-weight: 600;
+}
+#recruit-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#recruit-item {
+  display: flex;
+  max-width: 249px;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.bookmark-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  z-index: 1;
+}
+.recruit-image {
+  width: 80%;
+  height: 80%;
+  width: 248px;
+  height: 186px;
+  background-image: url("https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F52%2F17418_2_0.abfaf8d8__400_400.jpg&w=400&q=75");
+  border-radius: 4px;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+.recruit-big-text {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+.recruit-company-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+.grey-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.recruit-info-tag {
+  display: inline-block;
+  border: 1px solid rgb(0, 174, 173);
+  font-size: 10px;
+  padding: 3px 5px;
+  color: rgb(0, 174, 173);
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.recruit-money-text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* 전체 너비의 88%만 차지하게 함 */
+.section-wrapper {
+  width: 88%;
+  max-width: 1060px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+.both-container {
+  display: flex;
+  flex-direction: column;
+}
+.left-container {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+.right-container {
+  /* 우측 스티키 컴포넌트 fixed 하기 */
+  position: fixed;
+  left: 65%;
+  z-index: 2;
+  background-color: white;
+}
+/* 상하좌우 패딩을 주던가 div로 묶어줘야함 */
+.right-info-box {
+  width: 297px;
+  height: 278px;
+  border: 1px solid rgb(225, 226, 227);
+  border-radius: 3px;
+  padding: 24px;
+
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+}
+.top-image-box {
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  max-height: 490px;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.top-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.big-job-text {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.small-info-text {
+  display: flex;
+  /* background-color: yellow; */
+  align-items: center;
+}
+.small-company-text {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.small-color-box {
+  font-size: 10px;
+  font-weight: 600;
+  color: rgb(0, 174, 173);
+  border: 1px solid rgb(0, 174, 173);
+  border-radius: 2px;
+  display: inline-block;
+  padding: 3px;
+}
+.small-region-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+  border-left: 1px solid rgb(153, 153, 153);
+  margin-left: 8px;
+  padding-left: 5px;
+}
+.tag-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.tag-item {
+  font-size: 12px;
+  display: inline-block;
+  background-color: rgb(243, 245, 248);
+  border-radius: 25px;
+  padding: 9px 14px;
+  margin-right: 4px;
+  margin-bottom: 10px;
+}
+.line-box {
+  line-height: 28px;
+}
+.small-bold-text {
+  font-weight: 600;
+}
+.tech-stack-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.tech-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.tech-item {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 9px 14px;
+  border-radius: 20px;
+  background-color: rgb(228, 244, 236);
+  margin-right: 10px;
+}
+.company-info-box {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-top: 1px solid rgb(51, 51, 51);
+  padding-top: 30px;
+
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-text-box {
+  display: flex;
+  margin-bottom: 30px;
+}
+.left-text-box {
+  display: flex;
+  flex-direction: column;
+  color: rgb(153, 153, 153);
+  margin-right: 30px;
+}
+.margin-bottom {
+  margin-bottom: 20px;
+}
+.right-text-box {
+  display: flex;
+  flex-direction: column;
+}
+.region-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+.region-image-box {
+  width: 700px;
+  height: 254px;
+  margin-bottom: 60px;
+}
+.follow-company-box {
+  display: flex;
+  align-items: center;
+  width: 658px;
+  height: 50px;
+  border: 1px solid rgb(225, 226, 227);
+  border-radius: 3px;
+  padding: 20px;
+
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.company-image-box {
+  width: 50px;
+  height: 50px;
+  background-image: url("https://static.wanted.co.kr/images/wdes/0_5.0852ff23.jpg");
+  background-size: contain;
+  margin-right: 20px;
+}
+.company-grey-text {
+  color: rgb(153, 153, 153);
+  padding-top: 10px;
+}
+.follow-button-box {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+.follow-button {
+  width: 95px;
+  height: 40px;
+  border: 1px solid rgb(225, 226, 227);
+  background-color: white;
+  color: rgb(24, 76, 237);
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.share-button {
+  width: 38px;
+  height: 38px;
+  border-radius: 20px;
+  border: 1px solid rgb(225, 226, 227);
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.text-grey {
+  font-size: 14px;
+  font-weight: 600;
+  color: #999;
+  margin-bottom: 10px;
+}
+.both-text-box {
+  display: flex;
+  margin-top: 20px;
+}
+.text-box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+.right-blue-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 296px;
+  height: 48px;
+  border: 1px solid rgb(51, 102, 255);
+  border-radius: 25px;
+  margin-top: 30px;
+}
+.blue-button-text {
+  font-size: 16px;
+  font-weight: 600px;
+  color: rgb(51, 102, 255);
+}
+.bookmark-box {
+  /* display: flex; */
+  width: 13px;
+  height: 17px;
+  padding-right: 8px;
+}
+.right-grey-button {
+  margin-top: 10px;
+}
+.disabled-button {
+  width: 296px;
+  height: 48px;
+  background-color: rgb(153, 153, 153);
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  border: 0;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+.bottom-box {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.heart-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 74px;
+  height: 30px;
+  border: 1px solid rgb(225, 226, 227);
+  border-radius: 15px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.heart-svg-box {
+  width: 22px;
+  height: 22px;
+  padding-right: 5px;
+}
+.people-icon-box {
+  display: flex;
+  margin-left: 20px;
+}
+.people-svg-box {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+
+  background-size: cover, cover;
+  position: relative;
+}
+.people1 {
+  z-index: 3;
+  background-image: url("https://lh3.googleusercontent.com/a/AATXAJyptvBO9pOC55mAwO0IA3-llT_OIJ3QyPcS1-DN=s96-c"),
+    url("https://static.wanted.co.kr/images/userweb/profile_default.png");
+}
+.people2 {
+  z-index: 2;
+  margin-left: -10px;
+  background-image: url("https://k.kakaocdn.net/dn/chOGWm/btrJ7se3l3K/eeQiZuGgc7rBHKj9RBRFk1/img_110x110.jpg"),
+    url("https://static.wanted.co.kr/images/userweb/profile_default.png");
+}
+.people3 {
+  margin-left: -10px;
+  background-image: url("https://lh3.googleusercontent.com/a/ALm5wu2bYv18aK6_ahAXODnanhRHwCfEqvoUbqKJCBKA=s96-c"),
+    url("https://static.wanted.co.kr/images/userweb/profile_default.png");
+}

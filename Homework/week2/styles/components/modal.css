@@ -1,0 +1,448 @@
+/* .modal {
+    display: none; 
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    height: 674;
+    padding: 20px;
+    border: 1px solid rgb(225, 226, 227);
+    border-radius: 5px;
+} */
+
+/* 모달 스타일 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* overflow: auto;  */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#login-modal-content {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  background-color: #fefefe;
+  /* margin: 15% auto;  */
+  padding: 20px;
+  border: 1px solid rgb(225, 226, 227);
+  border-radius: 5px;
+  width: 358px;
+  /* 775px */
+  height: 634px;
+  overflow-y: auto;
+}
+
+.close-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wanted-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 358px;
+  height: 84px;
+}
+.wanted-big-text {
+  display: flex;
+  flex-direction: column;
+  width: 358px;
+  height: 64px;
+  font-size: 24px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.wanted-info-text {
+  width: 358px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(136, 136, 136);
+  line-height: 20px;
+  margin-bottom: 45px;
+}
+.center-text {
+  display: flex;
+  justify-content: center;
+}
+.email-input-box {
+  width: 358px;
+}
+.input-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(136, 136, 136);
+  margin-bottom: 10px;
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  width: 332px;
+  height: 48px;
+  padding: 0px 12px;
+  border: 1px solid rgb(225, 226, 227);
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+.input-box:focus {
+  border: 1px solid rgb(51, 102, 255);
+}
+.input-box::placeholder {
+  color: rgb(225, 226, 227);
+}
+.error-message {
+  color: rgb(254, 65, 92);
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+#submit-button {
+  width: 346px;
+  height: 45px;
+  padding: 2px 6px;
+  background-color: rgb(242, 244, 247);
+  border: 0;
+  border-radius: 25px;
+
+  color: rgb(204, 204, 204);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.small-or-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(147, 147, 147);
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.icon-list-box {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.icon-svg-box {
+  margin-bottom: 5px;
+}
+.icon-item {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+
+  color: rgb(136, 136, 136);
+  font-size: 11px;
+  font-weight: 500;
+}
+.regret-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 346px;
+  height: 50px;
+  padding: 2px 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: rgb(118, 118, 118);
+}
+.arrow-svg-box {
+  padding-left: 5px;
+  display: flex;
+}
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.border {
+  width: 358px;
+  border: 0.5px solid rgb(225, 226, 227);
+}
+.border-box {
+  padding: 30px 0px;
+}
+.policy-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  font-size: 13px;
+  color: rgb(118, 118, 118);
+
+  border-top: 1px solid rgb(225, 226, 227);
+  padding-top: 35px;
+}
+.policy-text {
+  font-size: 13px;
+  font-weight: 900;
+  padding-left: 10px;
+}
+.policy-small-text {
+  color: rgb(136, 136, 136);
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.country-box {
+  display: flex;
+  align-items: center;
+  width: 128px;
+  height: 27px;
+  border: 1px solid rgb(225, 226, 227);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+  font-weight: 600;
+}
+.country-image-box {
+  width: 23px;
+  height: 14px;
+  border: 1px solid rgb(225, 226, 227);
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.arrow-bottom-box {
+  margin-left: auto;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* 회원가입 모달 */
+#sign-modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  background-color: #fefefe;
+  /* margin: 15% auto;  */
+  padding: 0px 20px;
+  border: 1px solid rgb(225, 226, 227);
+  border-radius: 5px;
+  width: 358px;
+  height: 800px;
+  overflow-y: auto;
+  font-size: 18px;
+}
+#cancle-button {
+  top: 50;
+  left: 0;
+  position: absolute;
+
+  font-size: 17px;
+  font-weight: 400;
+}
+.sign-text-box {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+/* 헤더 fixed 처리는 나중에 하자! */
+.sign-header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  height: 65px;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /* position: relative; */
+  margin-bottom: 30px;
+}
+.enabled {
+  background-color: rgb(242, 244, 247);
+  color: rgb(225, 226, 227);
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#phone-error-message {
+  color: rgb(254, 65, 92);
+  font-size: 13px;
+  font-weight: 400;
+}
+#auth-request-message {
+  color: rgb(51, 102, 255);
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+/* select의 스타일링은 그것을 감싸고 있는 div 태그에 적용하는 것이 좋음 */
+.select-wrapper {
+  position: relative;
+  border: 1px solid rgb(225, 226, 227);
+  border-radius: 5px;
+
+  width: 332px;
+  height: 48px;
+  padding: 0px 12px;
+  margin-bottom: 10px;
+}
+select {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+
+  /* select 기본 스타일 reset */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+select::-ms-expand {
+  display: none;
+}
+.select-arrow-box {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.margin-top {
+  margin-top: 10px;
+}
+.margin-bottom {
+  margin-bottom: 10px;
+}
+.phone-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-bottom: 10px; */
+}
+.phone-input-box {
+  width: 202px;
+  padding: 0px 12px;
+}
+#phone-button {
+  width: 119px;
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(242, 244, 247);
+
+  font-size: 16px;
+  color: rgb(204, 204, 204);
+}
+.password-info-text {
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 18px;
+  color: rgb(136, 136, 136);
+}
+.top-agree-wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(225, 226, 227);
+  margin-bottom: 10px;
+}
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgb(236, 236, 236);
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.all-agree-text {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 22px;
+  color: rgb(51, 51, 51);
+}
+.agree-text {
+  font-size: 15px;
+  line-height: 22px;
+  color: rgb(136, 136, 136);
+}
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.bottom-check-wrapper {
+  display: flex;
+  margin-left: 28px;
+}
+.bottom-check-item {
+  display: flex;
+  align-items: center;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.bottom-check-text {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(136, 136, 136);
+  margin-left: 8px;
+}
+.bottom-button-wrapper {
+  /* height: 90px;  */
+  /* padding-top: 30px; */
+  /* padding-bottom: 10px; */
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  /* background-color: yellow; */
+}
+.bottom-button {
+  width: 358px;
+  height: 45px;
+  padding: 3px 6px;
+  border: 0;
+  border-radius: 25px;
+  background-color: rgb(242, 244, 247);
+
+  font-size: 16px;
+  font-weight: bold;
+}
+.opacity {
+  background-color: white;
+  height: 15px;
+  opacity: 0.4;
+}
+.white-overlap {
+  background-color: white;
+  padding-bottom: 20px;
+}

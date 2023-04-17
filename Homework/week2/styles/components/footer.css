@@ -1,0 +1,63 @@
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  border-top: 1px solid #e2e2e2;
+}
+.article-container {
+  width: 88%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 한 줄을 차지함 */
+.link-line {
+  display: flex;
+  height: 39px;
+  padding: 15px 0px;
+  border-bottom: 1px solid rgb(225, 226, 228);
+  justify-content: space-between;
+}
+.text-link-list {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+  align-items: center;
+}
+.wanted-box {
+  width: 113px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+.wanted-icon-box {
+  display: flex;
+}
+.wanted-text-box {
+  /* 질문!!: 이상하게 여기에 flex먹이면 수직 중앙이 안맞음 */
+  margin-left: 5px;
+}
+.text-link-item {
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+}
+.icon-link-list {
+  display: flex;
+  width: 18%;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-text-box {
+  /* display: flex; */
+  /* background-color: yellow; */
+  font-size: 12px;
+  color: rgb(118, 118, 118);
+  margin-top: 20px;
+  line-height: 1.6666666667em;
+  margin-bottom: 60px;
+}
+.bold-text {
+  font-weight: bold;
+}
