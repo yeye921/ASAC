@@ -1,0 +1,372 @@
+main {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-layout {
+  display: flex;
+  width: 88%;
+  max-width: 1080px;
+  justify-content: center;
+}
+.top-image-layout {
+  display: flex;
+  justify-content: center;
+}
+
+.top-image-div {
+  /* 여기다가 가로,세로 크기 줌 */
+  width: 88%;
+  max-width: 1080px;
+  height: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 10px;
+}
+article {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.article-border {
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgb(225, 226, 228);
+}
+.article-container {
+  width: 88%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+}
+.article-text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.article-text {
+  font-size: 22px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.article-text > h2 {
+  margin-right: 5px;
+}
+.select-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(138, 138, 138);
+  margin-bottom: 20px;
+  /* background-color: greenyellow; */
+}
+.select-item {
+  border: 1px solid rgb(225, 226, 228);
+  border-radius: 25px;
+  padding: 9px 22px;
+}
+.select-option-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid rgb(225, 226, 228);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 4px 0px;
+  color: rgba(138, 138, 138);
+}
+.contents-list {
+  display: flex;
+}
+.list-layout {
+  display: flex;
+  /* flex-wrap이나 간격 정의해야함 */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content-item {
+  width: 250px;
+  /* height: 300px; */
+  margin-bottom: 30px;
+}
+.image-box {
+  width: 248px;
+  height: 175px;
+  overflow: hidden;
+  margin-bottom: 13px;
+  border-radius: 5px;
+}
+.content-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.subject-text {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+/* hober하면 색깔이 rgb(51,51,51)로 변경됨 */
+.content-text {
+  margin-bottom: 13px;
+  font-size: 13px;
+  color: rgb(138, 138, 138);
+}
+.content-writer {
+  display: flex;
+  align-items: center;
+}
+.writer-image-box {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border: 1px solid #e2e2e2;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.writer-text {
+  font-size: 12px;
+  color: rgb(138, 138, 138);
+}
+.button-line {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 345px;
+  height: 50px;
+  border: 1px solid rgb(225, 226, 228);
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.banner-line {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+/* 백그라운드 관련 속성 알아두기 !! */
+.banner {
+  display: flex;
+  width: 100%;
+  height: 108px;
+  background-image: url("https://static.wanted.co.kr/images/type-test/typetest-banner-image.png");
+  background-color: rgb(13, 153, 255);
+  border-radius: 10px;
+
+  background-size: auto 100%;
+  background-position-x: 100%;
+  background-position-y: center;
+  color: white;
+  /* padding: 5px; */
+  align-items: center;
+}
+.banner-text-box {
+  width: 100%;
+  padding-left: 10%;
+}
+.banner-big-text {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.banner-small-text {
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+}
+.banner-svg {
+  width: 1em;
+  height: 1em;
+  fill: white;
+}
+
+.article-top-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article2-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-text-box {
+  font-size: 22px;
+  font-weight: 700;
+}
+.small-text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: rgb(138, 138, 138);
+  margin-top: 5px;
+}
+.arrow-button {
+  width: 40px;
+  height: 40px;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+
+  border: 1px solid rgb(225, 225, 225);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 2px 0px;
+  fill: rgba(138, 138, 138);
+}
+.disabled-button {
+  fill: rgb(221, 221, 221);
+  border: 1px solid rgb(238, 238, 238);
+}
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.event-item {
+  margin: 10px;
+  width: 48%;
+}
+.event-image-box {
+  width: 100%;
+  height: 232px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.image-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.event-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 20px;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.event-tag-black {
+  color: rgb(51, 51, 51);
+  border: 1px solid rgb(51, 51, 51);
+}
+.event-tag-green {
+  color: rgb(8, 186, 156);
+  border: 1px solid rgb(8, 186, 156);
+}
+.event-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+  margin-bottom: 3px;
+}
+.event-date {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(170, 170, 170);
+}
+.small-arrow-svg {
+  display: flex;
+  fill: rgb(138, 138, 138);
+}
+.article3-text {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.info-layout {
+  display: flex;
+}
+.info-item {
+  display: flex;
+  width: 25%;
+  height: 100px;
+  flex-direction: column;
+  /* background-color: yellow; */
+  border: 1px solid rgb(236, 236, 236);
+  justify-content: center;
+}
+.info-text-box {
+  display: flex;
+  justify-content: center;
+}
+.info-icon {
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+  margin-bottom: 15px;
+}
+.icon-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+/* 아래 부분 전체를 차지함 */
+/* flex-direction: column 이게 문제였음 !!! 이거때매 전체 너비의 몇프로만 차지하는게 중앙정렬이 안됬음 */
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  border-top: 1px solid #e2e2e2;
+}
+
+/* 한 줄을 차지함 */
+footer .link-line {
+  display: flex;
+  height: 39px;
+  padding: 15px 0px;
+  border-bottom: 1px solid rgb(225, 226, 228);
+  justify-content: space-between;
+}
+.text-link-list {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+  align-items: center;
+}
+.wanted-box {
+  display: flex;
+  align-items: center;
+}
+.wanted-text-box {
+  /* 질문!!: 이상하게 여기에 flex먹이면 수직 중앙이 안맞음 */
+  margin-left: 5px;
+}
+.text-link-item {
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+}
+.wanted-icon-box {
+  display: flex;
+}
+.icon-link-list {
+  display: flex;
+  width: 18%;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-text-box {
+  /* display: flex; */
+  /* background-color: yellow; */
+  font-size: 12px;
+  color: rgb(118, 118, 118);
+  margin-top: 20px;
+  line-height: 1.6666666667em;
+  margin-bottom: 60px;
+}
